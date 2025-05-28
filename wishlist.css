@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #1e1e1e;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.profile-header .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-header .left i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.profile-header .logo {
+  height: 3rem;
+}
+
+.profile-header .right-icons i {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #00cc66;
+
+}
+.profile-header .right-icons i #profile{
+   font-size: 1.6rem;
+   color: #000; 
+}
+
+.active-icon {
+  border-bottom: 2px solid green;
+  border-radius: 50%;
+}
+
+.logo {
+  height: 24px;
+}
+
+.right-icons i {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.active-icon {
+  color: goldenrod;
+  border-bottom: 2px solid goldenrod;
+  border-radius: 50%;
+}
+
+.wishlist-container {
+  padding: 20px 16px;
+}
+
+.wishlist-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #004c57;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 80%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.price {
+  color: #04b556;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.order-btn {
+  background-color: #04b556;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.remove-btn i {
+  margin-left: 6px;
+}
+
+@media (min-width: 768px) {
+  .profile-header, .profile-options, .wishlist-container {
+    max-width: 1050px;
+    margin: auto;
+
+  }
+  .option span {
+  flex-grow: 1;
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+}
+.option i {
+  font-size: 2rem;
+  color: #000;
+}
+.profile-header .logo {
+  height: 4.7rem;
+}
+.profile-header .right-icons i {
+  font-size: 1.8rem;}
+  .option {
+  padding: 1.5rem;
+}
+  .card img {
+    height: 150px;
+  }
+}

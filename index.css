@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0; 
+  left: 0;
+  background-color: #fff;
+}
+
+.logo img {
+  height: 5rem;
+  margin-right: 6px;
+}
+
+.nav-icons i {
+  font-size: 26px;
+  margin-left: 16px;
+  cursor: pointer;
+  color: #2ECC71;
+}
+
+.location-search {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 10px;
+  color: #000;
+}
+section a{
+    color: #2ECC71;
+}
+
+.location-search input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #2ECC71;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.categories, .offers, .summer-special, .top-scales, .soap-discount, .additional-products, .stay-cool {
+  padding: 8px 16px;
+}
+
+.category-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding-bottom: 3px;
+  scroll-behavior: smooth;
+}
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category {
+  text-align: center;
+  min-width: 70px;
+}
+
+.category img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 8px;
+}
+
+.offer-banner img, .soap-discount img {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  justify-content: space-around;
+}
+
+.product {
+  flex: 1 1 40%;
+  max-width: 100px;
+  text-align: center;
+}
+
+.product img {
+  width: 120px;
+  height: 120px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.product-card img {
+  width: 12rem;
+  height: 9rem;
+}
+
+.product-card button {
+  background-color: #00cc66;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.6rem;
+  border-radius: 20px;
+  margin-top: 6px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.stay-cool img {
+  width: 100%;
+  border-radius: 10px;
+  height: 20rem;
+  margin: 10px 0;
+}
+.drinks img{height: 10rem; width: 6rem;}
+.category-scroll .drinks{ padding-left: 1.3rem;}
+
+@media (min-width: 768px) {
+  .product-list {
+    justify-content: flex-start;
+  }
+  .product-card {
+    display: inline-block;
+    margin-right: 12px;
+  }
+  .category-scroll {
+       gap: 19px;
+       padding-bottom: 3px;}
+    .card-section{
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+
+@media (min-width: 1024px) {
+  .navbar, .location-search, .section-header, .categories, .offers, .summer-special, .top-scales, .soap-discount, .additional-products, .stay-cool {
+    max-width: 1024px;
+    margin: auto;
+  }
+  
+}
+@media screen and (min-width: 700px) {
+      .card-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .category-scroll {
+       gap: 30px;
+       padding-bottom: 3px;
+}
+    }
