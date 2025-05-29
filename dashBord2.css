@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.back-icon {
+  font-size: 1.4rem;
+  color: green;
+  cursor: pointer;
+}
+
+.right-section {
+  text-align: right;
+}
+
+.shop-name {
+  color: green;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+/* ===== DASHBOARD TITLE & MENU ===== */
+.dashboard {
+  padding: 1.4rem 1rem;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  gap: 10px;
+}
+
+.menu-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+/* ===== FILTER BUTTONS ===== */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+  background-color: #73c2b4;
+}
+
+.btn.active {
+  background-color: #04b556;
+  color: #fff;
+}
+
+.action-buttons button:hover {
+  background-color: #04b556;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ===== CHART IMAGE WRAPPER ===== */
+.chart-section {
+  overflow-x: auto;
+  padding: 0 1rem 1.5rem;
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.chart-section::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.chart-container {
+  min-width: 100%;
+  display: inline-block;
+}
+
+.chart-image {
+  display: block;
+  width: auto;
+  max-height: 280px;
+  height: auto;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (min-width: 768px) {
+  .dashboard {
+    max-width: 700px;
+    margin: auto;
+    padding: 1.4rem 0rem;
+  }
+
+  .header {
+    padding: 1rem 5rem;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 0rem 10rem;
+  }
+
+  .logo {
+    height: 6rem;
+    width: 7rem;
+  }
+}

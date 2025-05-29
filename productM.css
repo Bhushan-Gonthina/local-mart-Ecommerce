@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.back-icon {
+  font-size: 1.4rem;
+  color: green;
+  cursor: pointer;
+}
+
+.right-section {
+  text-align: right;
+}
+
+.shop-name {
+  color: green;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.menu-icon{
+    height: 3rem;
+    width: 3rem;
+}
+.product-management {
+  padding: 1.4rem 1rem;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  gap: 10px;
+}
+
+.menu-icon {
+  font-size: 1.4rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.action-buttons button:hover{
+    background-color: #04b556;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn.add {
+  background-color: #04b556;
+}
+
+.btn.edit {
+  background-color: #6ec1a0;
+}
+
+.btn.delete {
+  background-color: #73c2b4;
+}
+
+.upload-box {
+  margin-bottom: 20px;
+}
+
+.drag-area {
+  border: 1px solid #888;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  color: #777;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.or {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.upload-box #link {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.form-inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.input-group , .upload-box #link{
+  display: flex;
+  align-items: center;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 8px 10px;
+  gap: 8px;
+  background-color: #fff;
+}
+
+.input-group i {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #04b556;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .product-management {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .upload-box input[type="text"],
+  .submit-btn {
+    font-size: 1rem;
+  }
+  .header {
+  padding: 1rem 5rem;
+  font-weight: bold;}
+  .product-management{
+    padding: 1.4rem 0rem;
+  }
+}
+@media (min-width:1024px){
+     .header {
+  padding: 1rem 8rem;
+  font-weight: bold;}
+  .logo {
+  height: 6rem;
+  width: 7rem;
+}
+.header{
+    padding: 0rem 10rem;
+}
+
+}

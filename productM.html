@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Management - LocalMart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="productM.css" />
+</head>
+<body>
+
+ 
+  <header class="header">
+    <div class="left-section">
+      <i class="bi bi-arrow-left back-icon"></i>
+      <img src="logo.png" alt="Local Mart" class="logo">
+    </div>
+    <div class="right-section">
+      <p class="shop-name">Shop Name</p>
+      <p class="location"><i class="bi bi-geo-alt"></i> Loaction</p>
+    </div>
+  </header>
+
+  <main class="product-management">
+    <div class="title-row">
+        
+      <a href="menu.html" style="text-decoration: none;"><i> <img src="menu.png" alt="" style="cursor: pointer;"></i></a>
+      <span>Product Management <i class="bi bi-chevron-down"></i></span>
+    </div>
+
+   <div class="action-buttons">
+      <a href="productM.html" style="text-decoration: none;"><button class="btn add"><i class="bi bi-plus-lg"></i> Add</button></a>
+      <a href="pmEdit.html" style="text-decoration: none;"><button class="btn edit"><i class="bi bi-pencil"></i> Edit</button></a>
+      <a href="pmdel.html" style="text-decoration: none;"><button class="btn delete"><i class="bi bi-trash"></i> Delete</button></a>
+    </div>
+
+   
+    <div class="upload-box">
+      <input type="file" id="fileInput" class="drag-area" placeholder="Drag Product " accept="file,image/*"/>
+        <p>Drag Product Image</p></div>
+      </div>
+      <div class="or">Or</div>
+      <input type="text" id="link" placeholder="Paste Image Link" style="width: 100%; height:2.5rem;border-radius: 0.4rem; margin:1rem 0;">
+    </div>
+
+   
+    <div class="form-inputs">
+      <div class="input-group">
+        <i class="bi bi-box"></i>
+        <input type="text" placeholder="Enter Product Name">
+      </div>
+      <div class="input-group">
+        <i class="bi bi-tag"></i>
+        <input type="text" placeholder="Price Per Kg/L">
+      </div>
+      <div class="input-group">
+        <i class="bi bi-hdd"></i>
+        <input type="text" placeholder="Enter Total Stock">
+      </div>
+    </div>
+
+    <button class="submit-btn">Submit</button>
+  </main>
+
+</body>
+</html>

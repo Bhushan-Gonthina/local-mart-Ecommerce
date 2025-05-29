@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 16px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0; 
+  left: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 5rem;
+  margin-right: 6px;
+}
+
+.nav-icons i {
+  font-size: 26px;
+  margin-left: 16px;
+  cursor: pointer;
+  color: #2ECC71;
+}
+
+.location-search {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 10px;
+  color: #000;
+}
+section a{
+    color: #2ECC71;
+}
+
+.location-search input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #2ECC71;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.categories, .offers, .summer-special, .top-scales, .soap-discount, .additional-products, .stay-cool {
+  padding: 8px 16px;
+}
+
+.category-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding-bottom: 3px;
+  scroll-behavior: smooth;
+}
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category {
+  text-align: center;
+  min-width: 70px;
+}
+
+.category img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 8px;
+}
+
+.offer-banner img, .soap-discount img {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+/*{
+   transform: scale(1.05);
+   transition: all 0.2 ease-in-out;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+.product {
+  flex: 1 1 40%;
+  max-width: 100px;
+  text-align: center;
+  
+}
+
+.product img {
+  width: 6rem;
+  height: 8rem;
+  border: #00cc66 1px solid;
+  border-radius: 25px;
+  box-shadow: 0 0 5px #000;
+  cursor: pointer;
+  gap:3rem
+}
+.product-list .product p{
+  font-family:sans-serif;
+  padding: 0;
+}
+
+.product-list .product:hover,.offer-banner img:hover{
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.product-card img {
+  width: 12rem;
+  height: 9rem;
+}
+.soap-discount{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.soap-discount img{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 9rem;
+}
+.product-card p{
+  margin-top: 1rem;
+}
+
+.product-card button {
+  background-color: #00cc66;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 20px;
+  margin-top: 6px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.stay-cool img {
+  width: 100%;
+  border-radius: 10px;
+  height: 20rem;
+  margin: 10px 0;
+}
+.drinks img{height: 15rem; width: 7rem;}
+.category-scroll .drinks{ padding-left: 1.3rem;}
+
+@media (min-width: 768px) {
+  .product-list {
+    justify-content: flex-start;
+  }
+  .product-card {
+    display: inline-block;
+    margin-right: 12px;
+  }
+  .category-scroll {
+       gap: 19px;
+       padding-bottom: 3px;}
+    .card-section{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .product-list{
+        gap: 0.3rem;}
+        .product { 
+  flex: 0 0 5%;
+  max-width: 100px; 
+  text-align: center;
+  margin: 0rem;
+   .top-scales {gap: 2rem;}
+      
+    
+   }
+   .location-search input{ margin: 0rem 4rem; }
+}
+
+
+@media (min-width: 1024px) {
+  .navbar, .location-search, .section-header, .categories, .offers, .summer-special, .top-scales, .soap-discount, .additional-products, .stay-cool {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .top-scales { width: 100%;gap: 3rem;}
+  .offers,.card-section{display: flex; flex-direction: row;}
+  .offer-banner{width: 70%;}
+  .soap-discount img{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 14rem;
+}
+.product-list{
+  justify-content: space-between;
+}
+  .additional-products{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+  }
+  .card-section .offer-banner img{
+    height: 20rem;
+  }
+  .stay-cool img{height: 27rem;}
+  
+}
+@media screen and (min-width: 700px) {
+      .card-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .category-scroll {
+       gap: 30px;
+       padding-bottom: 3px;
+}
+ .top-scales {
+  .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+    }}

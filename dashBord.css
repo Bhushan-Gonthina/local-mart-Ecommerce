@@ -1,0 +1,141 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-icon {
+  color: #00AA5B;
+  font-size: 20px;
+}
+
+.logo {
+  height: 5rem;
+ width: 5rem;}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.shop-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #008040;
+}
+
+.location {
+  font-size: 14px;
+  color: #444;
+}
+
+/* =====================
+   DASHBOARD HEADER
+===================== */
+.dashboard-controls {
+  padding: 16px;
+}
+
+.dashboard-title {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.menu-icon,
+.arrow-icon {
+  font-size: 22px;
+}
+
+/* =====================
+   TIME FILTER BUTTONS
+===================== */
+.time-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.time-btn {
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background-color: #C5EAD8;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.time-btn.active {
+  background-color: #008040;
+  color: white;
+}
+
+/* =====================
+   IMAGE SECTION WITH SCROLL
+===================== */
+.chat-section {
+  overflow-x: auto;
+  padding: 16px;
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.chat-section::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari */
+}
+
+.image-container {
+  min-width: 100%;
+}
+
+.scrollable-image {
+  display: block;
+  height: auto;
+  max-height: 300px;
+  width: auto;
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+@media screen and (min-width: 480px) {
+  .dashboard-title {
+    font-size: 18px;
+  }
+  .time-btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0rem 7rem;
+  }
+  .chat-section,.dashboard-controls {
+    padding: 1rem 12rem;
+  }
+}

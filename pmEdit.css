@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.back-icon {
+  font-size: 1.4rem;
+  color: green;
+  cursor: pointer;
+}
+
+.right-section {
+  text-align: right;
+}
+
+.shop-name {
+  color: green;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.product-management {
+  padding: 1.4rem 1rem;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  gap: 10px;
+}
+
+.menu-icon {
+  font-size: 1.4rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn.add {
+    background-color: #73c2b4;
+  
+}
+
+.btn.edit {
+ background-color: #04b556;
+}
+
+.btn.delete {
+  background-color: #73c2b4;
+}
+
+
+.product-list {
+  background-color: #fef1d9;
+  padding: 20px 16px;
+  border-radius: 10px;
+}
+
+.product-list h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.item-card {
+  background-color: #e3e3e3;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+}
+
+.item-card img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-card span {
+  flex: 1;
+  font-weight: 600;
+  color: #2c2c2c;
+}
+.action-buttons button:hover{
+    background-color: #04b556;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.actions i {
+  color: green;
+  margin-left: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #04b556;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .product-management {
+    max-width: 700px;
+    margin: auto;
+  }
+  .header {
+  padding: 1rem 5rem;
+  font-weight: bold;}
+  .product-management{
+    padding: 1.4rem 0rem;
+  }
+
+  .item-card img {
+    height: 50px;
+    width: 50px;
+  }
+  @media (min-width:1024px){
+     .header {
+  padding: 1rem 8rem;
+  font-weight: bold;}
+  .logo {
+  height: 6rem;
+  width: 7rem;
+}
+.header{
+    padding: 0rem 10rem;
+}
+}
+}
